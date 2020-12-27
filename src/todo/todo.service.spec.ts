@@ -15,4 +15,12 @@ describe('TodoService', () => {
   it('should be defined', () => {
     expect(service).toBeDefined()
   })
+
+  describe('Create', () => {
+    it('should create a todo', () => {
+      const result = service.create({
+        title: 'Test',
+      })
+    })
+  })
 })
